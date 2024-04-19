@@ -6,10 +6,6 @@ import {useNavigation} from '@react-navigation/native';
 const Navbar = () => {
   const navigation = useNavigation();
 
-  const navigateToHomePage = () => {
-    navigation.navigate('Home');
-  };
-
   const navigateToDetailsPage = () => {
     navigation.navigate('Details');
   };
@@ -20,9 +16,6 @@ const Navbar = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={navigateToHomePage}>
-        <Text style={styles.link}>Home</Text>
-      </TouchableOpacity>
       <TouchableOpacity onPress={navigateToDetailsPage}>
         <Text style={styles.link}>Details</Text>
       </TouchableOpacity>
